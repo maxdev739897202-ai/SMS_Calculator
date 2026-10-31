@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Standard Calculator"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- هنا نضع أزرار وهمية للحاسبة -->
+    <GridLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:layout_centerInParent="true">
+        
+        <!-- مجرد مثال لزر واحد، يمكنك تكراره لبقية الأرقام -->
+        <Button android:text="1" />
+        <Button android:text="2" />
+        <Button android:text="3" />
+        <Button android:text="+" />
+        <!-- ... بقية الأزرار ... -->
+    </GridLayout>
+</RelativeLayout>

